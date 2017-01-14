@@ -1,0 +1,6 @@
+C:\Users\victor\Desktop\Projects\PushNotification\PushNotification\bin\Debug\PushNotification.exe.config
+C:\Users\victor\Desktop\Projects\PushNotification\PushNotification\bin\Debug\PushNotification.exe
+C:\Users\victor\Desktop\Projects\PushNotification\PushNotification\bin\Debug\PushNotification.pdb
+C:\Users\victor\Desktop\Projects\PushNotification\PushNotification\obj\Debug\PushNotification.csprojResolveAssemblyReference.cache
+C:\Users\victor\Desktop\Projects\PushNotification\PushNotification\obj\Debug\PushNotification.exe
+C:\Users\victor\Desktop\Projects\PushNotification\PushNotification\obj\Debug\PushNotification.pdb
