@@ -31,11 +31,12 @@ For more details, linked to [here](https://developer.apple.com/library/content/d
 
 ## Introduction
 Let me introduce the server end at first.
-1. Here is the simplest `payload` of a remote notification
+1.  Here is the simplest `payload` of a remote notification
 ```
 {"aps":{"alert":"This is a message for testing APNs","badge":123,"sound":"default"}}
 ```
 
+These lib should be referenced
 ```
 using System;
 using System.IO;
@@ -47,7 +48,7 @@ using System.Text;
 using System.Threading;
 ```
 
-2. Reading the p12 file which is downloaded from [Apple Developer Website](https://developer.apple.com), the varieble certFilePath is your p12 certificate whole path and the varieble certPwd is the passphrase of certificate, code snippet below
+2.  Reading the p12 file which is downloaded from [Apple Developer Website](https://developer.apple.com), the varieble certFilePath is your p12 certificate whole path and the varieble certPwd is the passphrase of certificate, code snippet below
 ```
 X509Certificate2 cert = new X509Certificate2(certFilePath, certPwd);
 X509CertificateCollection certificate = new X509CertificateCollection();
