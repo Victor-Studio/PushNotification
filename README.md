@@ -31,7 +31,7 @@ For more details, linked to [here](https://developer.apple.com/library/content/d
 
 ## Introduction
 Let me introduce the server end at first.
-1.  Here is the simplest `payload` of a remote notification
+- Here is the simplest `payload` of a remote notification
 ```
 {"aps":{"alert":"This is a message for testing APNs","badge":123,"sound":"default"}}
 ```
@@ -48,14 +48,14 @@ using System.Text;
 using System.Threading;
 ```
 
-2.  Reading the p12 file which is downloaded from [Apple Developer Website](https://developer.apple.com), the varieble certFilePath is your p12 certificate whole path and the varieble certPwd is the passphrase of certificate, code snippet below
+- Reading the p12 file which is downloaded from [Apple Developer Website](https://developer.apple.com), the varieble certFilePath is your p12 certificate whole path and the varieble certPwd is the passphrase of certificate, code snippet below
 ```
 X509Certificate2 cert = new X509Certificate2(certFilePath, certPwd);
 X509CertificateCollection certificate = new X509CertificateCollection();
 certificate.Add(cert);
 ```
 
-3. Then, create an instance of SslStream and handshake before passing host address and port, code snippet below
+- Then, create an instance of SslStream and handshake before passing host address and port, code snippet below
 ```
 //For distribution mode, the host is gateway.push.apple.com    
 //For development mode, the host is gateway.sandbox.push.apple.com
@@ -90,7 +90,7 @@ bool ServerCertificateValidationCallback(object sender, X509Certificate certific
 }
 ```
 
-4.  Push a remote notification before consisting of the Payload string
+- Push a remote notification before consisting of the Payload string
 ```
 //This is definition of PushNotificationPayload of struct 
 public struct PushNotificationPayload
